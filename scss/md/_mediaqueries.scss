@@ -1,0 +1,26 @@
+@media (max-width:576px) {
+    /* estilos contenido principal de nosotros*/
+    main{
+        display:flex;
+        .contenidoNosotros{
+            display: flex;
+            flex-direction: column;
+            p{
+                width: 80vw;
+                margin: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1rem;
+                align-items: center;
+            }
+            .imgNosotros{
+                margin: 10px;
+                img{
+                    width: 100%;
+                    height: 80%;
+                }
+            }
+            
+        }
+    }
+}

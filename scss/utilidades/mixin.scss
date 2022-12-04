@@ -1,0 +1,37 @@
+// con parametros
+@mixin medidas ($ancho, $alto, $margin){
+    width: $ancho;
+    height: $alto;
+    margin: $margin;
+}
+
+
+// sin parametros
+
+@mixin borde {
+    border: 2px solid black;
+}
+
+@mixin transition{
+    transition: all 400ms ease;
+}
+
+@mixin medidas-footer {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+}
+
+@mixin h3-footer {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+@mixin ul-footer {
+    list-style: none;
+}
+
+@mixin li-footer {
+    padding: 5px;
+    font-size: medium;
+}
