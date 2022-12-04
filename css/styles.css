@@ -1,36 +1,51 @@
 /* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
- /* Estilos generales*/
- body{
-    background-color: lightgray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main form fieldset p select, main form fieldset p select option {
+  font-family: Arial, Helvetica, sans-serif; }
+
+@media (max-width: 576px) {
+  /* estilos contenido principal de nosotros*/
+  main {
+    display: flex; }
+    main .contenidoNosotros {
+      display: flex;
+      flex-direction: column; }
+      main .contenidoNosotros p {
+        width: 80vw;
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        align-items: center; }
+      main .contenidoNosotros .imgNosotros {
+        margin: 10px; }
+        main .contenidoNosotros .imgNosotros img {
+          width: 100%;
+          height: 80%; } }
+
+/* estilos generales*/
+body {
+  background-color: lightgray;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
 /*estilos del header*/
+header nav .container-fluid a h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-variant: small-caps;
+  font-size: 4rem;
+  background-image: linear-gradient(to right, tomato, lightgray);
+  border-radius: 10px; }
+  header nav .container-fluid a h1:hover {
+    background-image: linear-gradient(to left, tomato, lightgray); }
 
-#navbarSupportedContent{
-    justify-content: end;
-}
-
-header h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-variant: small-caps;
-    font-size: 4rem;
-    background-image: linear-gradient(to right, tomato, lightgray);
-    border-radius: 10px;
-    
-}
-header h1:hover{
-    background-image: linear-gradient(to left, tomato, lightgray);
-}
-
-
-header nav ul li a{
+header nav .container-fluid #navbarSupportedContent {
+  justify-content: end; }
+  header nav .container-fluid #navbarSupportedContent ul li a {
     text-decoration: none;
     color: black;
     transition: all 400ms ease;
@@ -38,203 +53,157 @@ header nav ul li a{
     padding: 5px;
     border-radius: 10px;
     text-shadow: 1px 1px 2px black;
-    box-shadow: 1px 1px 3px black;  
-}
+    box-shadow: 1px 1px 3px black; }
+    header nav .container-fluid #navbarSupportedContent ul li a:hover {
+      background: #3dbebe;
+      text-decoration: tomato;
+      padding: 5px;
+      border-radius: 10px; }
+  header nav .container-fluid #navbarSupportedContent ul .desplegable {
+    background-color: transparent;
+    border: 0; }
 
-header nav ul li a:hover{
-    background: #3dbebe;
-    text-decoration: tomato;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-/*estilos del main principal, productos eh infantiles*/
-
-.contenedorProductos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}  
-
-.tarjetaProducto{
+/* estilos del main principal, productos eh infantiles */
+main .contenedorProductos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  main .contenedorProductos .tarjetaProducto {
     margin: 2%;
     padding: 7px;
     justify-content: center;
     border: 2px solid black;
     border-radius: 6px;
-    background-color:tomato;
+    background-color: tomato;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
-    transition: all 400ms ease;
-}
+    transition: all 400ms ease; }
+    main .contenedorProductos .tarjetaProducto:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+    main .contenedorProductos .tarjetaProducto img {
+      width: 300px;
+      height: 300px;
+      margin: 5px;
+      border-radius: 6px; }
+    main .contenedorProductos .tarjetaProducto .contenidoTarjetas {
+      padding: 1%;
+      text-align: center; }
+      main .contenedorProductos .tarjetaProducto .contenidoTarjetas h2 {
+        font-weight: 800; }
+      main .contenedorProductos .tarjetaProducto .contenidoTarjetas p {
+        color: black;
+        font-size: large; }
+      main .contenedorProductos .tarjetaProducto .contenidoTarjetas a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        transition: all 400ms ease; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas a:hover {
+          background: black;
+          color: tomato; }
 
-.tarjetaProducto:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-} 
-
-.tarjetaProducto img{
-    width: 300px;
-    height: 300px;
-    margin: 5px;
-}  
-
-.tarjetaProducto .contenidoTarjetas{
-    padding: 1%;
-    text-align: center;
-} 
-
-.tarjetaProducto .contenidoTarjetas p{
-    color: black;
-    font-size: large;
-}
-
-.tarjetaTroducto .contenidoTarjetas h2{
-    font-weight: 800;
-}
-
-.tarjetaProducto .contenidoTarjetas a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    transition: all 400ms ease;
-}
-
-.tarjetaProducto .contenidoTarjetas a:hover{
-    background: black;
-    color: tomato;
-}
-
-/* estilos contenido principal de nosotros*/
-
-main .contenidoNosotros{
-    display: flex;
-    grid-template-columns:4fr 4fr;
-    grid-template-rows: 4fr;
-    gap: 10px;
-
-}
-
-main .contenidoNosotros .imgNosotros{
-   margin: 10px;
-}
-main .contenidoNosotros .imgNosotros img{
-    width: 40vw;
-    height: 70vh;
-}
-
-.contenidoNosotros p{
+/* estilos contenido principal nosotros */
+main .contenidoNosotros {
+  display: flex;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 4fr;
+  gap: 10px; }
+  main .contenidoNosotros p {
     width: 50vw;
+    height: 0;
     margin: 10px;
     text-align: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.5rem;
-}
+    font-size: 1.5rem; }
+  main .contenidoNosotros .imgNosotros {
+    margin: 10px; }
+    main .contenidoNosotros .imgNosotros img {
+      width: 40vw;
+      height: 70vh;
+      border-radius: 50px;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
 
-/* estilos formulario*/
-form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    cursor: default;
-}
-
-form fieldset{
+/* estilo formulario */
+main form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: default; }
+  main form fieldset {
     background-color: tomato;
-    border: 4px solid black;
+    border: 2px solid black;
     width: 80vw;
     margin-left: 15px;
     margin-right: 15px;
     padding-top: 15px;
-    padding-bottom: 15px;
-}
-form fieldset legend{
-    font-size: 30px;
-    font-weight: bold;
-    
-}
+    padding-bottom: 15px; }
+    main form fieldset legend {
+      font-size: 30px;
+      font-weight: bold; }
+    main form fieldset p {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 15px; }
+      main form fieldset p input {
+        font-size: 20px;
+        font-weight: 600; }
 
-form fieldset p{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 15px;
-}
-
-form fieldset input{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-/* estilos del footer*/
-
-footer{
-    padding: 10px;
-    margin: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    cursor: default;
-}
-
-footer div{
-    padding: 15px;
-    height: 300px;
+/* estilo footer */
+footer {
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: default; }
+  footer .acercaDe {
     width: 300px;
-}
-
-footer div h3{
-    margin: 10px;
-    font-size: 25px;
-}
-footer div ul{
-    list-style: none;
-
-}
-
-footer div ul li{
-    padding: 5px;
-    font-size: medium;
-}
-
-footer div ul li img{
-    width: 20px;
-    height: 20px;
-}
-
-
-/*MD*/
-
-@media (max-width:576px) {
-
-    /* estilos contenido principal de nosotros*/
-
-    main .contenidoNosotros{
-        display: flex;
-        flex-direction: column;
-    }
-
-    main .contenidoNosotros .imgNosotros{
-    margin: 10px;
-    }
-    main .contenidoNosotros .imgNosotros img{
-        width: 100%;
-        height: 80%;
-    }
-
-    .contenidoNosotros p{
-        width: 90vw;
-        margin: 10px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 1rem;
-    }
-
-}
+    height: 300px;
+    padding: 15px; }
+    footer .acercaDe h3 {
+      margin: 10px;
+      font-size: 1.5rem; }
+    footer .acercaDe ul {
+      list-style: none; }
+      footer .acercaDe ul li {
+        padding: 5px;
+        font-size: medium; }
+  footer .ayuda {
+    width: 300px;
+    height: 300px;
+    padding: 15px; }
+    footer .ayuda h3 {
+      margin: 10px;
+      font-size: 1.5rem; }
+    footer .ayuda ul {
+      list-style: none; }
+      footer .ayuda ul li {
+        padding: 5px;
+        font-size: medium; }
+  footer .redes {
+    width: 300px;
+    height: 300px;
+    padding: 15px; }
+    footer .redes h3 {
+      margin: 10px;
+      font-size: 1.5rem; }
+    footer .redes ul {
+      list-style: none; }
+      footer .redes ul li {
+        padding: 5px;
+        font-size: medium; }
+        footer .redes ul li a {
+          text-decoration: none;
+          color: black; }
+        footer .redes ul li img {
+          width: 20px;
+          height: 20px; }
