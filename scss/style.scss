@@ -8,10 +8,11 @@
 
 // hojas secundarias
 
+@import "md/mediaqueries";
 @import "utilidades/variables";
 @import "utilidades/mixin.scss";
 @import "utilidades/extend.scss";
-@import "md/mediaqueries";
+
 
 
 /* estilos generales*/
@@ -40,7 +41,7 @@ header{
             }
             button{
                 span{
-                    
+
                 }
             }
             #navbarSupportedContent{
@@ -195,7 +196,7 @@ main{
                     }
                 }
                 textarea{
-                    
+
                 }
             }
             input{

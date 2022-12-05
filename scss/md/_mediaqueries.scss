@@ -1,26 +1,28 @@
 @media (max-width:576px) {
-    /* estilos contenido principal de nosotros*/
+    /* main nosotros*/
     main{
-        display:flex;
         .contenidoNosotros{
             display: flex;
-            flex-direction: column;
-            p{
-                width: 80vw;
-                margin: 10px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 1rem;
-                align-items: center;
-            }
-            .imgNosotros{
-                margin: 10px;
-                img{
-                    width: 100%;
-                    height: 80%;
+            flex-wrap: wrap;
+            .parrafoNosotros{         
+                p{
+                    width: 90vw;
+                    height: 70%;
+                    margin: 10px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 10px;
                 }
             }
-            
+            .imgNosotros{
+                img{
+                    width: 90%;
+                    height: 70%;
+                }
+            }
         }
     }
 }
+
+
+
