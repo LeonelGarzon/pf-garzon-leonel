@@ -1,0 +1,249 @@
+//media queries celulares
+@import "utilidades/variables";
+@import "utilidades/variablesmd";
+@import "utilidades/mixin.scss";
+
+@media (max-width:576px){
+    /* estilos generales*/
+    body{
+    background-color: $color-fondo-md;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /*estilos del header*/
+
+header{
+    nav{
+        .container-fluid{
+            a{
+                h1{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: bolder;
+                    font-variant: small-caps;
+                    font-size: 4rem;
+                    background-image: linear-gradient(to right, $color-principal-md, $color-botones-nav-md);
+                    border-radius: 10px;
+                    &:hover{
+                        background-image: linear-gradient(to left, $color-principal-md, $color-botones-nav-md);
+                    }
+                }
+            }
+            button{
+                span{
+
+                }
+            }
+            #navbarSupportedContent{
+                justify-content: end;
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            @include transition;
+                            background-color: $color-principal-md;
+                            padding: 5px;
+                            border-radius: 10px;
+                            text-shadow: 1px 1px 2px black;
+                            box-shadow: 1px 1px 3px black;
+                            &:hover{
+                                background: $color-botones-nav-md;
+                                text-decoration: $color-principal-md;
+                                padding: 5px;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    .desplegable{
+                        background-color: transparent;
+                        border: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+/* estilos del main principal, productos eh infantiles */ 
+main{
+    .contenedorProductos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .tarjetaProducto{
+            margin: 2%;
+            padding: 7px;
+            justify-content: center;
+            @include borde;
+            border-radius: 6px;
+            background-color: $color-principal-md;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            cursor: default;
+            @include transition;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            }
+            img{
+                @include medidas(300px, 300px, 5px);
+                border-radius: 6px;
+                
+            }
+            .contenidoTarjetas{
+                padding: 1%;
+                text-align: center;
+                h2{
+                    font-weight: 800;
+                }
+                p{
+                    color: black;
+                    font-size: large;
+                }
+                a{
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 10px;
+                    margin-top: 10px;
+                    color: black;
+                    @include borde;
+                    border-radius: 5px;
+                    @include transition;
+                    &:hover{
+                        background: black;
+                        color: $color-principal-md;
+                    }
+                }
+            }
+        }
+    }
+}
+/* estilos contenido principal nosotros */ 
+
+main{
+    .contenidoNosotros{
+        display: flex;
+        grid-template-columns: 4fr 4fr;
+        grid-template-rows: 4fr;
+        gap: 10px;
+        p{
+            @include medidas(50vw, 0, 10px);
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .imgNosotros{
+            margin: 10px;
+            img{
+                width: 40vw;
+                height: 70vh;
+                border-radius: 50px;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}
+/* estilo formulario */ 
+
+main{
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        cursor: default;
+        fieldset{
+            background-color: $color-principal-md;
+            @include borde;
+            width: 80vw;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            legend{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 600;
+                margin: 15px;
+                input{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                select{
+                    option{
+                        
+                    }
+                }
+                textarea{
+
+                }
+            }
+            input{
+                
+            }
+        }
+    }
+}
+/* estilo footer */ 
+
+footer{
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: default;
+    .acercaDe{
+        color: whitesmoke;
+        @include medidas-footer;
+        h3{
+            @include h3-footer;
+        }
+        ul{
+            @include ul-footer;
+            li{
+                @include li-footer;
+            }
+        }
+    }
+    .ayuda{ 
+        color: whitesmoke;      
+        @include medidas-footer;
+        h3{
+            @include h3-footer;
+        }
+        ul{
+            @include ul-footer;
+            li{
+                @include li-footer;
+            }
+        }
+    }
+    .redes{
+        color: whitesmoke;
+        @include medidas-footer;
+        h3{
+            @include h3-footer;
+        }
+        ul{
+            @include ul-footer;
+            li{
+                a{
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+                @include li-footer;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+}

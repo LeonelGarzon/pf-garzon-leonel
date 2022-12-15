@@ -5,8 +5,183 @@
   box-sizing: border-box; }
 
 @media (max-width: 576px) {
+  /* estilos generales*/
   body {
-    background-color: black; } }
+    background-color: #181616;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  /*estilos del header*/
+  header nav .container-fluid a h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #ca6958, #6736a0);
+    border-radius: 10px; }
+    header nav .container-fluid a h1:hover {
+      background-image: linear-gradient(to left, #ca6958, #6736a0); }
+  header nav .container-fluid #navbarSupportedContent {
+    justify-content: end; }
+    header nav .container-fluid #navbarSupportedContent ul li a {
+      text-decoration: none;
+      color: black;
+      transition: all 400ms ease;
+      background-color: #ca6958;
+      padding: 5px;
+      border-radius: 10px;
+      text-shadow: 1px 1px 2px black;
+      box-shadow: 1px 1px 3px black; }
+      header nav .container-fluid #navbarSupportedContent ul li a:hover {
+        background: #6736a0;
+        text-decoration: #ca6958;
+        padding: 5px;
+        border-radius: 10px; }
+    header nav .container-fluid #navbarSupportedContent ul .desplegable {
+      background-color: transparent;
+      border: 0; }
+  /* estilos del main principal, productos eh infantiles */
+  main .contenedorProductos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    main .contenedorProductos .tarjetaProducto {
+      margin: 2%;
+      padding: 7px;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 6px;
+      background-color: #ca6958;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+      main .contenedorProductos .tarjetaProducto:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+      main .contenedorProductos .tarjetaProducto img {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 6px; }
+      main .contenedorProductos .tarjetaProducto .contenidoTarjetas {
+        padding: 1%;
+        text-align: center; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas h2 {
+          font-weight: 800; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas p {
+          color: black;
+          font-size: large; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: black;
+          border: 2px solid black;
+          border-radius: 5px;
+          transition: all 400ms ease; }
+          main .contenedorProductos .tarjetaProducto .contenidoTarjetas a:hover {
+            background: black;
+            color: #ca6958; }
+  /* estilos contenido principal nosotros */
+  main .contenidoNosotros {
+    display: flex;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 4fr;
+    gap: 10px; }
+    main .contenidoNosotros p {
+      width: 50vw;
+      height: 0;
+      margin: 10px;
+      text-align: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5rem; }
+    main .contenidoNosotros .imgNosotros {
+      margin: 10px; }
+      main .contenidoNosotros .imgNosotros img {
+        width: 40vw;
+        height: 70vh;
+        border-radius: 50px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
+  /* estilo formulario */
+  main form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: default; }
+    main form fieldset {
+      background-color: #ca6958;
+      border: 2px solid black;
+      width: 80vw;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      main form fieldset legend {
+        font-size: 30px;
+        font-weight: bold; }
+      main form fieldset p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 15px; }
+        main form fieldset p input {
+          font-size: 20px;
+          font-weight: 600; }
+  /* estilo footer */
+  footer {
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: default; }
+    footer .acercaDe {
+      color: whitesmoke;
+      width: 300px;
+      height: 300px;
+      padding: 15px; }
+      footer .acercaDe h3 {
+        margin: 10px;
+        font-size: 1.5rem; }
+      footer .acercaDe ul {
+        list-style: none; }
+        footer .acercaDe ul li {
+          padding: 5px;
+          font-size: medium; }
+    footer .ayuda {
+      color: whitesmoke;
+      width: 300px;
+      height: 300px;
+      padding: 15px; }
+      footer .ayuda h3 {
+        margin: 10px;
+        font-size: 1.5rem; }
+      footer .ayuda ul {
+        list-style: none; }
+        footer .ayuda ul li {
+          padding: 5px;
+          font-size: medium; }
+    footer .redes {
+      color: whitesmoke;
+      width: 300px;
+      height: 300px;
+      padding: 15px; }
+      footer .redes h3 {
+        margin: 10px;
+        font-size: 1.5rem; }
+      footer .redes ul {
+        list-style: none; }
+        footer .redes ul li {
+          padding: 5px;
+          font-size: medium; }
+          footer .redes ul li a {
+            text-decoration: none;
+            color: whitesmoke; }
+          footer .redes ul li img {
+            width: 20px;
+            height: 20px; } }
 
 main form fieldset p select, main form fieldset p select option {
   font-family: Arial, Helvetica, sans-serif; }
@@ -191,3 +366,182 @@ footer {
         footer .redes ul li img {
           width: 20px;
           height: 20px; }
+
+@media (max-width: 768px) {
+  /* estilos generales*/
+  body {
+    background-color: #141212;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  /*estilos del header*/
+  header nav .container-fluid a h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #6736a0, #a03680);
+    border-radius: 10px; }
+    header nav .container-fluid a h1:hover {
+      background-image: linear-gradient(to left, #6736a0, #a03680); }
+  header nav .container-fluid #navbarSupportedContent {
+    justify-content: end; }
+    header nav .container-fluid #navbarSupportedContent ul li a {
+      text-decoration: none;
+      color: black;
+      transition: all 400ms ease;
+      background-color: #6736a0;
+      padding: 5px;
+      border-radius: 10px;
+      text-shadow: 1px 1px 2px black;
+      box-shadow: 1px 1px 3px black; }
+      header nav .container-fluid #navbarSupportedContent ul li a:hover {
+        background: #a03680;
+        text-decoration: #6736a0;
+        padding: 5px;
+        border-radius: 10px; }
+    header nav .container-fluid #navbarSupportedContent ul .desplegable {
+      background-color: transparent;
+      border: 0; }
+  /* estilos del main principal, productos eh infantiles */
+  main .contenedorProductos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    main .contenedorProductos .tarjetaProducto {
+      margin: 2%;
+      padding: 7px;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 6px;
+      background-color: #6736a0;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+      main .contenedorProductos .tarjetaProducto:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+      main .contenedorProductos .tarjetaProducto img {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 6px; }
+      main .contenedorProductos .tarjetaProducto .contenidoTarjetas {
+        padding: 1%;
+        text-align: center; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas h2 {
+          font-weight: 800; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas p {
+          color: black;
+          font-size: large; }
+        main .contenedorProductos .tarjetaProducto .contenidoTarjetas a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: black;
+          border: 2px solid black;
+          border-radius: 5px;
+          transition: all 400ms ease; }
+          main .contenedorProductos .tarjetaProducto .contenidoTarjetas a:hover {
+            background: black;
+            color: #6736a0; }
+  /* estilos contenido principal nosotros */
+  main .contenidoNosotros {
+    display: flex;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 4fr;
+    gap: 10px; }
+    main .contenidoNosotros p {
+      width: 50vw;
+      height: 0;
+      margin: 10px;
+      text-align: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5rem; }
+    main .contenidoNosotros .imgNosotros {
+      margin: 10px; }
+      main .contenidoNosotros .imgNosotros img {
+        width: 40vw;
+        height: 70vh;
+        border-radius: 50px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
+  /* estilo formulario */
+  main form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: default; }
+    main form fieldset {
+      background-color: #6736a0;
+      border: 2px solid black;
+      width: 80vw;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      main form fieldset legend {
+        font-size: 30px;
+        font-weight: bold; }
+      main form fieldset p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 15px; }
+        main form fieldset p input {
+          font-size: 20px;
+          font-weight: 600; }
+  /* estilo footer */
+  footer {
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: default; }
+    footer .acercaDe {
+      color: #a03680;
+      width: 300px;
+      height: 300px;
+      padding: 15px; }
+      footer .acercaDe h3 {
+        margin: 10px;
+        font-size: 1.5rem; }
+      footer .acercaDe ul {
+        list-style: none; }
+        footer .acercaDe ul li {
+          padding: 5px;
+          font-size: medium; }
+    footer .ayuda {
+      color: #a03680;
+      width: 300px;
+      height: 300px;
+      padding: 15px; }
+      footer .ayuda h3 {
+        margin: 10px;
+        font-size: 1.5rem; }
+      footer .ayuda ul {
+        list-style: none; }
+        footer .ayuda ul li {
+          padding: 5px;
+          font-size: medium; }
+    footer .redes {
+      color: #a03680;
+      width: 300px;
+      height: 300px;
+      padding: 15px; }
+      footer .redes h3 {
+        margin: 10px;
+        font-size: 1.5rem; }
+      footer .redes ul {
+        list-style: none; }
+        footer .redes ul li {
+          padding: 5px;
+          font-size: medium; }
+          footer .redes ul li a {
+            text-decoration: none;
+            color: #a03680; }
+          footer .redes ul li img {
+            width: 20px;
+            height: 20px; } }
