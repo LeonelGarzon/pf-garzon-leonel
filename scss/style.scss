@@ -144,7 +144,7 @@ main{
             text-align: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         
         .imgNosotros{
@@ -292,6 +292,7 @@ header{
                 }
             }
             button{
+                background-color: $color-botones-nav-mdt;
                 span{
 
                 }
@@ -384,16 +385,16 @@ main{
 
 main{
     .contenidoNosotros{
+        width: 100%;
         display: flex;
-        grid-template-columns: 4fr 4fr;
-        grid-template-rows: 4fr;
-        gap: 10px;
+        justify-content: center;
         p{
             @include medidas(50vw, 0, 10px);
             text-align: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            color: $color-botones-nav-mdt;
         }
         
         .imgNosotros{

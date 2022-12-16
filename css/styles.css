@@ -279,7 +279,7 @@ main .contenidoNosotros {
     text-align: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   main .contenidoNosotros .imgNosotros {
     margin: 10px; }
     main .contenidoNosotros .imgNosotros img {
@@ -382,6 +382,8 @@ footer {
     border-radius: 10px; }
     header nav .container-fluid a h1:hover {
       background-image: linear-gradient(to left, #6736a0, #a03680); }
+  header nav .container-fluid button {
+    background-color: #a03680; }
   header nav .container-fluid #navbarSupportedContent {
     justify-content: end; }
     header nav .container-fluid #navbarSupportedContent ul li a {
@@ -446,10 +448,9 @@ footer {
             color: #6736a0; }
   /* estilos contenido principal nosotros */
   main .contenidoNosotros {
+    width: 100%;
     display: flex;
-    grid-template-columns: 4fr 4fr;
-    grid-template-rows: 4fr;
-    gap: 10px; }
+    justify-content: center; }
     main .contenidoNosotros p {
       width: 50vw;
       height: 0;
@@ -457,7 +458,8 @@ footer {
       text-align: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 1.5rem; }
+      font-size: 1rem;
+      color: #a03680; }
     main .contenidoNosotros .imgNosotros {
       margin: 10px; }
       main .contenidoNosotros .imgNosotros img {
