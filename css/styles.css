@@ -83,10 +83,9 @@
             color: #ca6958; }
   /* estilos contenido principal nosotros */
   main .contenidoNosotros {
+    width: 100%;
     display: flex;
-    grid-template-columns: 4fr 4fr;
-    grid-template-rows: 4fr;
-    gap: 10px; }
+    justify-content: center; }
     main .contenidoNosotros p {
       width: 50vw;
       height: 0;
@@ -94,7 +93,8 @@
       text-align: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 1.5rem; }
+      font-size: 1rem;
+      color: #a03680; }
     main .contenidoNosotros .imgNosotros {
       margin: 10px; }
       main .contenidoNosotros .imgNosotros img {
